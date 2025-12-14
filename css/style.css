@@ -1,0 +1,18 @@
+.hidden {
+    display: none
+}
+.product-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: white;
+}
+.product-card img {
+  max-height: 150px;
+}
+#productco {
+  font-weight: bold;
+}

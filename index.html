@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Donation Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid p-5 bg-dark text-white text-left">
+        <h1>Humanity Aid</h1>
+    <div class="mb-2">
+        <h5 class="fst-italic">Quick and easy donations. Donate today!</h5>
+    </div>
+</div>
+<div class="mt-3 justify-content-center">
+    <h1 class="text-center">Products List:</h1>
+</div>
+<div class="container my-4">
+    <div class="row g-4">
+        <div class="col-12 col-md-4 text-center product-card" data-name="Build A Well" data-price="1000">
+            <img src="./img/img1.jpg" class="img-fluid rounded mb-2" alt="">
+            <h5>Build A Well</h5>
+            <p>$1,000</p>
+            <button class="btn btn-dark w-100 add-to-cart">Add To Cart</button>
+        </div>
+
+        <div class="col-12 col-md-4 text-center product-card" data-name="Sponsor A Schoolchild" data-price="100">
+            <img src="./img/img2.jpg" class="img-fluid rounded mb-2" alt="">
+            <h5>Sponsor A Schoolchild</h5>
+            <p>$100</p>
+            <button class="btn btn-dark w-100 add-to-cart">Add To Cart</button>
+        </div>
+
+        <div class="col-12 col-md-4 text-center product-card" data-name="Firewood" data-price="50">
+            <img src="./img/img3.jpg" class="img-fluid rounded mb-2" alt="">
+            <h5>Firewood</h5>
+            <p>$50</p>
+            <button class="btn btn-dark w-100 add-to-cart">Add To Cart</button>
+        </div>
+
+        <div class="col-12 col-md-4 text-center product-card" data-name="Coal" data-price="100">
+            <img src="./img/img4.jpg" class="img-fluid rounded mb-2" alt="">
+            <h5>Coal</h5>
+            <p>100$</p>
+            <button class="btn btn-dark w-100 add-to-cart">Add To Cart</button>
+        </div>
+
+        <div class="col-12 col-md-4 text-center product-card" data-name="Feed A Family" data-price="20">
+            <img src="./img/img5.jpg" class="img-fluid rounded mb-2" alt="">
+            <h5>Feed A Family</h5>
+            <p>$20</p>
+            <button class="btn btn-dark w-100 add-to-cart">Add To Cart</button>
+        </div>
+
+        <div class="col-12 col-md-4 text-center product-card" data-name="Feed 10 Families" data-price="200">
+            <img src="./img/img5.jpg" class="img-fluid rounded mb-2" alt="">
+            <h5>Feed 10 Families</h5>
+            <p>$200</p>
+            <button class="btn btn-dark w-100 add-to-cart">Add To Cart</button>
+        </div>
+
+        <div class="col-12 col-md-4 text-center product-card" data-name="Feed 100 Families" data-price="2000">
+            <img src="./img/img5.jpg" class="img-fluid rounded mb-2" alt="">
+            <h5>Feed 100 Families</h5>
+            <p>$2000</p>
+            <button class="btn btn-dark w-100 add-to-cart">Add To Cart</button>
+        </div>
+
+        <div class="col-12 col-md-4 text-center product-card" data-name="Sponsor Medicine (1x)" data-price="10">
+            <img src="./img/img8.jpg" class="img-fluid rounded mb-2" alt="">
+            <h5>Sponsor Medicine (1x)</h5>
+            <p>$10</p>
+            <button class="btn btn-dark w-100 add-to-cart">Add To Cart</button>
+        </div>
+
+        <div class="col-12 col-md-4 text-center product-card" data-name="Sponsor Medicine (10x)" data-price="100">
+            <img src="./img/img8.jpg" class="img-fluid rounded mb-2" alt="">
+            <h5>Sponsor Medicine (10x)</h5>
+            <p>$100</p>
+            <button class="btn btn-dark w-100 add-to-cart">Add To Cart</button>
+        </div>
+        <div class="col-12 col-md-4 text-center product-card" data-name="Candy for 10 Children" data-price="10">
+            <img src="./img/img10.jpg" class="img-fluid rounded mb-2" alt="">
+            <h5>Candy for 10 Children</h5>
+            <p>$10</p>
+            <button class="btn btn-dark w-100 add-to-cart">Add To Cart</button>
+        </div>
+        <div class="col-12 col-md-4 text-center product-card" data-name="Candy for 50 Children" data-price="50">
+            <img src="./img/img10.jpg" class="img-fluid rounded mb-2" alt="">
+            <h5>Candy for 50 Children</h5>
+            <p>$50</p>
+            <button class="btn btn-dark w-100 add-to-cart">Add To Cart</button>
+        </div>
+        <div class="col-12 col-md-4 text-center product-card" data-name="Candy for 100 Children" data-price="100">
+            <img src="./img/img10.jpg" class="img-fluid rounded mb-2" alt="">
+            <h5>Candy for 100 Children</h5>
+            <p>$100</p>
+            <button class="btn btn-dark w-100 add-to-cart">Add To Cart</button>
+        </div>
+    </div>
+</div>
+<h3>Shopping Cart</h3>
+    <div id="shoppingCart" class="border p-3 mb-4">
+        <ul id="productli" class="list-group"></ul>
+        <p>Total: $<span id="productco">0</span></p>
+    </div>
+<div class="d-flex justify-content-center">
+    <button id="showbutton" class="btn btn-outline-primary w-75 mb-4">Donate</button>
+</div>
+<div id="checkoutform" class="container-fluid border hidden">
+    <h4>Checkout</h4>
+    <p>First, you must enter necessary data.</p>
+            <form>
+                <div class="mb-2">
+                    <label>First Name</label>
+                    <input id="firstName" class="form-control" required>
+                </div>
+
+                <div class="mb-2">
+                    <label>Last Name</label>
+                    <input id="lastName" class="form-control" required>
+                </div>
+
+                <div class="mb-2">
+                    <label>Email</label>
+                    <input type="email" id="email" class="form-control" required>
+                </div> 
+
+                <div class="mb-2">
+                    <label>Phone</label>
+                    <input id="phone" class="form-control" required maxlength="15">
+                </div>
+                <div class="mb-2">
+                    <label>Address</label>
+                    <input id="Address" class="form-control" maxlength="50" required>
+                </div>
+                <div class="mb-2">
+                    <label>ZIP</label>
+                    <input id="zip" class="form-control" required maxlength="6" style="margin-bottom: 20px";>
+                </div>
+                <button type="submit" class="btn btn-primary">Confirm</button>
+            </form>
+</div>
+<script src="./js/scripts.js"></script>
+</body>
+</html>
+
